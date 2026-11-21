@@ -40,7 +40,7 @@ class MenuAdapter(private val context: Context, private val boissons: List<Boiss
 
         holder.nom.text = boisson.nom
         holder.description.text = boisson.description
-        holder.prix.text = boisson.prix.toString()
+        holder.prix.text = boisson.prix
         holder.image.setImageResource(boisson.image)
 
         return vue
