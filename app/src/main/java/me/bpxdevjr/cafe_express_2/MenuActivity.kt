@@ -107,10 +107,10 @@ class MenuActivity : AppCompatActivity() {
             val boisson = boissons[position]
             val intent = Intent(this, DetailsActivity::class.java)
 
-            intent.putExtra("nom", boisson.nom)
-            intent.putExtra("description", boisson.description)
-            intent.putExtra("prix", boisson.prix)
-            intent.putExtra("image", boisson.image)
+            intent.putExtra("NOM", boisson.nom)
+            intent.putExtra("DESCRIPTION", boisson.description)
+            intent.putExtra("PRIX", boisson.prix)
+            intent.putExtra("IMAGE", boisson.image)
 
             startActivity(intent)
         }
