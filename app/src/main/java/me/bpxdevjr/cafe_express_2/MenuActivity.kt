@@ -25,7 +25,6 @@ class MenuActivity : AppCompatActivity() {
         }
 
         lvMenu = findViewById<ListView>(R.id.lvMenu)
-
         val boissons: List<Boisson> = listOf(
             Boisson(
                 "Espresso",
@@ -100,7 +99,6 @@ class MenuActivity : AppCompatActivity() {
                 R.drawable.eau_minerale
             )
         )
-
         lvMenu.adapter = MenuAdapter(this, boissons)
 
         lvMenu.setOnItemClickListener { _, _, position, _ ->

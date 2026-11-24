@@ -16,7 +16,7 @@ class MenuAdapter(private val context: Context, private val boissons: List<Boiss
     override fun getItem(position: Int): Any = boissons[position]
     override fun getItemId(position: Int): Long = position.toLong()
 
-    private class ViewHolder (vue: View) {
+    private class ViewHolder(vue: View) {
         val image: ImageView = vue.findViewById(R.id.image)
         val nom: TextView = vue.findViewById(R.id.nom)
         val description: TextView = vue.findViewById(R.id.description)
