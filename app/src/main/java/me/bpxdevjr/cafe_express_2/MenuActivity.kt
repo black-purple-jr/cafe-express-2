@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import me.bpxdevjr.cafe_express_2.adapters.MenuAdapter
 import me.bpxdevjr.cafe_express_2.data.Boisson
 
@@ -100,6 +101,9 @@ class MenuActivity : AppCompatActivity() {
             )
         )
         lvMenu.adapter = MenuAdapter(this, boissons)
+
+        val toolbar = findViewById<MaterialToolbar>(R.id.topAppBar)
+        toolbar.title = getString(R.string.titre_menu)
 
         lvMenu.setOnItemClickListener { _, _, position, _ ->
             val boisson = boissons[position]

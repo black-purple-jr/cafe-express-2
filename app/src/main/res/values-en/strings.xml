@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cafe Express 2</string>
+    <string name="btn_commander">Order</string>
+    <string name="btn_calculer">Calculate</string>
+    <string name="switch_label">Takeout (+2 MAD)</string>
+    <string name="rb_petit">Small</string>
+    <string name="rb_moyen">Medium</string>
+    <string name="rb_grand">Large</string>
+    <string name="creme">Cream (+2 MAD)</string>
+    <string name="recap_total">Total : %1$d MAD</string>
+    <string name="titre_menu">Our Menu</string>
+    <string name="voir_notre_menu">See our menu</string>
+</resources>

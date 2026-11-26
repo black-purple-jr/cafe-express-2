@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Cafe Express 2</string>
+    <string name="btn_commander">Commander</string>
+    <string name="btn_calculer">Calculer</string>
+    <string name="switch_label">À emporter (+2 DH)</string>
+    <string name="rb_petit">Petit</string>
+    <string name="rb_moyen">Moyen</string>
+    <string name="rb_grand">Grand</string>
+    <string name="creme">Crème (+2 DH)</string>
+    <string name="recap_total">Total : %1$d DH</string>
+    <string name="titre_menu">Notre Menu</string>
+    <string name="voir_notre_menu">Voir notre menu</string>
 </resources>

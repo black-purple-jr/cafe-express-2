@@ -6,11 +6,13 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.RadioGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 
 class DetailsActivity : AppCompatActivity() {
 
@@ -25,8 +27,8 @@ class DetailsActivity : AppCompatActivity() {
 
     private lateinit var outputText: TextView
 
-    private lateinit var btnRetour: Button
     private lateinit var btnCalculer: Button
+    private lateinit var btnAjouterAuPanier: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,12 +58,17 @@ class DetailsActivity : AppCompatActivity() {
 
         outputText = findViewById(R.id.txtResult)
 
-        btnRetour = findViewById(R.id.btnRetour)
+        btnAjouterAuPanier = findViewById(R.id.btnAjouterAuPanier)
         btnCalculer = findViewById(R.id.btnCalculer)
 
         menuItemPicture.setImageResource(image)
         menuItemName.text = nom
         menuItemDescription.text = description
+
+        val toolbar: MaterialToolbar = findViewById(R.id.customPageBar)
+        toolbar.setNavigationOnClickListener {
+            finish()
+        }
 
 
         btnCalculer.setOnClickListener {
@@ -84,11 +91,9 @@ class DetailsActivity : AppCompatActivity() {
             }
 
             var total = avecCreme + aEmporte + prixTaille
-            outputText.text = "$total DH"
+            outputText.text = getString(R.string.recap_total, total)
         }
 
-        btnRetour.setOnClickListener {
-            finish()
-        }
+        btnAjouterAuPanier.setOnClickListener {  }
     }
 }
